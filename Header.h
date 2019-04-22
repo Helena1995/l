@@ -17,7 +17,6 @@ public:
 	unsigned char getKopeek();
 	void addMoney(Money& someMoney );
 	void withdrawMoney(Money& someMoney);
-	void mulMoney(Money& someMoney);
 	void print();
 
 };
