@@ -5,18 +5,19 @@
 
 using namespace std;
 
-class Time 
+class Money
 {
 private:
-	long hours;
-	unsigned char minutes;
+	long rubley;
+	unsigned char kopeek;
+
 public:
-	void setTime(long newHours, unsigned char newMinutes );
-	long getHours();
-	unsigned char getMinutes();
-	Time operator+ (Time& plusTime);
-	Time operator- (Time& minusTime);
-	Time operator* (int mulTime);
+	void set(int newRubley, int newKopek);
+	long getRubley();
+	unsigned char getKopeek();
+	void addMoney(Money& someMoney );
+	void withdrawMoney(Money& someMoney);
+	void mulMoney(Money& someMoney);
 	void print();
 
 };
